@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Berita - Kategori Terpisah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover {
+            background-color: #575757;
+        }
+
+        /* Dropdown Menu */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 150px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px 15px;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        main {
+            width: 75%;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        aside {
+            width: 25%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h3 {
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beranda Berita</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Berita</a>
+                <ul>
+                    <li><a href="#teknologi">Teknologi</a></li>
+                    <li><a href="#olahraga">Olahraga</a></li>
+                    <li><a href="#politik">Politik</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h3>Kategori Populer</h3>
+            <ul>
+                <li><a href="#teknologi">Teknologi</a></li>
+                <li><a href="#olahraga">Olahraga</a></li>
+                <li><a href="#politik">Politik</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="teknologi">
+                <h2>Berita Teknologi</h2>
+                <div>
+                    <h3>Jerman Akan Larang Komponen Huawei dan ZTE untuk Jaringan 5G</h3>
+                    <img src="5g.jpg" alt="Jerman Larang Huawei">
+                    <p>Jerman berencana untuk melarang komponen yang dibuat oleh perusahaan Cina, seperti Huawei dan ZTE, dari bagian jaringan 5G miliknya. Langkah kehati-hatian tersebut merupakan bagian dari rencana pemerintah Jerman untuk merombak jaringan telekomunikasinya untuk mengatasi masalah keamanan nasional.
+                        Seorang juru bicara Kementerian Dalam Negeri Jerman, dikutip Gizmochina, 7 Maret 2023, mengatakan bahwa pemerintah sedang melakukan tinjauan umum terhadap pemasok teknologi telekomunikasi dan menyiapkan draf daftar potensi ancaman.
+                        Jika diberlakukan, larangan itu akan menghentikan operator telekomunikasi di seluruh Jerman untuk menggunakan komponen dari perusahaan Cina tertentu, seperti Huawei dan ZTE, di jaringan 5G mereka.
+                        Larangan itu berpotensi akan menciptakan beban tambahan bagi operator telekomunikasi karena mereka mungkin harus melepas dan mengganti komponen yang sudah terpasang di jaringan tanpa kompensasi apa pun dari pemerintah.
+                        Kemungkinan Jerman memutuskan hubungan dengan vendor Cina tidak terlalu mengejutkan, sebab Menteri Ekonomi Robert Habeck pernah mengungkapkan pada bulan November bahwa Jerman ingin mengurangi ketergantungan pada Cina.
+                        Menurut survei Desember 2022 oleh konsultan telekomunikasi Eropa Strand Consult, ambisi 5G Jerman sebenarnya menjadi lebih bergantung pada Huawei. Survei menunjukkan bahwa Huawei menyumbang 59 persen dari RAN 5G Jerman, dibandingkan dengan 57 persen di jaringan 4G.
+                        Menanggapi temuan ini, John Strand, pendiri Strand Consult, mengeluarkan peringatan kepada mereka yang bergerak lambat untuk melarang komponen jaringan yang berisiko. "Lebih berbahaya bergantung pada jaringan telekomunikasi Cina daripada bergantung pada gas Rusia," katanya. Infrastruktur digital disebutkan pondasi dalam hidup bermasyarakat.</p>
+                </div>
+                
+            </section>
+
+            <section id="olahraga">
+                <h2>Berita Olahraga</h2>
+                <div>
+                    <h3>Taiwan Kalahkan Timnas Indonesia 1-0 di Asian Games</h3>
+                    <img src="bola.webp" alt="Timnas Indonesia di Asian Games">
+                    <p>Timnas U-24 Indonesia kalah dari Taiwan 0-1 pada laga kedua babak penyisihan Grup F Asian Games 2022 yang digelar di Stadion Universitas Zhejiang Hangzhou China, Kamis.
+                        Pelatih Indra Sjafri membuat empat perubahan dari susunan pemain jika dibandingkan dengan pertandingan pertama melawan Kirgistan.
+                        Perubahan terjadi pada penjaga gawang di mana Adi Satryo menggantikan Ernando Ari sebagai starter. Pada lini tengah, Muhammad Taufany yang sebelumnya menjadi starter digantikan oleh Ananda Raehan. Selain itu dua bek tengah juga diisi oleh Alfeandra Dewangga dan Rizky Ridho.
+                        Timnas Indonesia cukup menguasai bola di babak pertama dengan mencoba membangun beberapa serangan yang memiliki peluang untuk terciptanya gol.
+                        Beberapa tembakan sudah diciptakan oleh Timnas Indonesia sejak awal laga dari kaki Alfeandra Dewangga melalui tendangan bebas, Egy Maulana lewat tendangan spekulasi jarak jauh, Bagas Kaffa yang menusuk ke kotak penalti lawan di menit ke-22, dan tembakan luar kotak penalti dari Ananda Raehan.
+                        Namun tak ada tendangan bola yang berubah jadi gol dari keempat percobaan tembakan itu, meskipun tiga di antaranya tepat mengarah ke gawang.
+                        Sementara para pemain Taiwan hanya mengandalkan serangan balik yang sempat beberapa kali mengancam gawang Adi Satryo. Babak pertama tanpa gol dari kedua tim.
+                        Pada permulaan babak kedua, pelatih Indra Sjafri mengganti tiga pemainnya sekaligus. Muhammad Taufany, Robi Darwis, dan Hugo Samir menggantikan Ananda Raehan, Bagas Kaffa, dan Titan Agung.
+                        Namun Indonesia malah dikejutkan oleh gol dari Wen Yen Chin di menit 47. Serangan cepat yang dibangun oleh Taiwan membuat Indonesia tertinggal 0-1.
+                        Meski tertinggal, Indonesia masih lebih dominan dibandingkan Taiwan dan beberapa kali mencoba membuat peluang. Namun berkali-kali percobaan membangun serangan yang dilakukan oleh Garuda Muda belum berbuah peluang yang bisa dimanfaatkan dengan baik.
+                        Disiplinnya pertahanan pemain Taiwan membuat Timnas kesulitan untuk menciptakan peluang. Tembakan keras luar kotak penalti dari Egy Maulana di menit 90 masih mengarah ke kiper Taiwan.
+                        Indonesia sebenarnya mendapat keuntungan dengan dikeluarkannya pemain Taiwan Liang Meng Hsin yang mendapatkan kartu kuning kedua di menit kedua injury time. Namun sayangnya Indonesia tidak bisa memanfaatkan empat menit waktu tambahan tersisa untuk menyamakan kedudukan.
+                        Dari dua laga yang telah dimainkan pada babak penyisihan Grup F Asian Games 2022 Hangzhou, Timnas Indonesia mengemas satu kemenangan dan satu kalah. Selanjutnya, Indonesia akan berhadapan dengan Korea Utara pada Minggu (24/9).</p>
+                </div>
+                
+            </section>
+
+            <section id="politik">
+                <h2>Berita Politik</h2>
+                <div>
+                    <h3>PDIP Pertegas Sikap Politik dengan Jokowi</h3>
+                    <img src="politik.webp" alt="PDIP dan Jokowi">
+                    <p>Direktur Eksekutif Institute for Democracy & Strategic Affairs (Indostrategic) Ahmad Khoirul Umam menyatakan PDI Perjuangan telah mempertegas sikap politik dengan Joko Widodo.
+                        "Pengumuman Mahfud MD selaku bakal cawapres pendamping Ganjar di saat Presiden Joko Widodo sedang melakukan lawatan luar negeri, bisa dimaknai PDIP ingin secara tegas memutus ketergantungan politiknya pada figur Joko Widodo," katanya dalam keterangan tertulis di Jakarta, Rabu.
+                        Dosen Universitas Paramadina itu berpendapat tidak dilibatkannya Jokowi dalam pengambilan keputusan penentuan cawapres Ganjar, seolah mempertegas sikap PDIP yang ingin membuktikan mesin politiknya yang independen, tetap kokoh, dan tidak lagi bergantung kepada ketokohan dan populisme Jokowi.
+                        Bahkan kata dia, hal itu juga dikonfirmasi oleh penundaan pemanggilan putra Jokowi Gibran Rakabuming Raka oleh Sekjen DPP PDIP Hasto Kristianto, terkait wacana pencawapresannya setelah keluar putusan Mahkamah Konstitusi (MK).
+                        "PDIP tidak lagi mempertimbangkan variabel Jokowi dalam menjalankan mesin politiknya," katanya menegaskan.
+                        Sebelumnya, Ketua Umum DPP PDI Perjuangan Megawati Soekarnoputri mengumumkan Mahfud MD sebagai bakal calon wakil presiden (bacawapres) yang mendampingi Ganjar Pranowo dalam kontestasi Pemilu Presiden (Pilpres) 2024.
+                        "Hari ini, Rabu 18 oktober 2023 saya dengan mantap diri saya ambil keputusan ke semua, saya tujukan sebesar-besar bagi kepentingan rakyat, bangsa dan negara dengan ucapkan bismillahirrahmanirrahim calon wakil presiden yang dipilih PDIP yang akan dampingi Ganjar Pranowo adalah Prof Dr Mahfud MD,” kata Megawati di Kantor DPP PDIP, Jakarta, Rabu.
+                        Pasangan Ganjar Pranowo - Mahfud MD diusung partai politik yakni PDI Perjuangan, Partai Persatuan Pembangunan (PPP), Partai Hati Nurani Rakyat (Hanura) dan Partai Persatuan Indonesia (Perindo).</p>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Beranda Berita. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
